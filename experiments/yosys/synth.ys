@@ -1,0 +1,13 @@
+read -vlog95 design.v 
+proc
+opt
+fsm
+opt
+memory
+opt
+techmap 
+opt
+abc -lut 3 -dress
+opt
+# show
+write_verilog synth.v
